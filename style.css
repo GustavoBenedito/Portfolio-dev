@@ -110,7 +110,7 @@ header{
 
 .banner{
     position:absolute;
-    top:50%;
+    top:40%;
     left:5%;
     line-height:3.5em;
 
@@ -132,7 +132,6 @@ header{
     font-family: var(--font-secundary);
     font-weight: 100;
     text-shadow:0.2em 0.2em rgba(0,0,0,0.4);
-    margin-bottom:1em;
     animation: moveBanner 1s forwards;
 
 }
@@ -195,7 +194,6 @@ header{
 
 }
 .menu-link:hover{
-
     color:  rgb(215,27,168);
     transition: 0.2s;
 }
@@ -212,7 +210,6 @@ header{
     display: flex;
     justify-content: center;
     align-items:center;
-    border-radius:50%;
     color:rgba(138,32,111,1);
 }
 .social-media i:hover{
