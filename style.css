@@ -220,6 +220,7 @@ header{
     transition:0.5s;
 }
 .habilidades{
+    margin-top:5em;
     display:grid;
     grid-template-columns: repeat(16,1fr);
     grid-template-rows: repeat(16,6em);
@@ -252,12 +253,14 @@ header{
     grid-column: 11/14;
     grid-row: 5/-1;
 }
-.habilidade{
-    cursor:pointer;
-}
+
 .habilidade:hover i{
     color: rgb(223, 101, 192);
-    transition: 1s;
+    transition: 0.5s;
+}
+.habilidade:hover h3{
+    color: rgb(223, 101, 192);
+    transition: 0.5s;
 }
 .sessao-header{
     display:flex;
@@ -280,6 +283,7 @@ header{
 .habilidades-header{
     display:flex;
     align-items: center;
+    cursor:pointer;
 }
 
 .habilidades-header i{
@@ -306,4 +310,11 @@ header{
 .habilidades-img-wrapper img{
     object-fit: cover;
     width:100%;
+}
+@media (max-width:800px){
+
+    .habilidades{
+        display:block;
+
+    }
 }
