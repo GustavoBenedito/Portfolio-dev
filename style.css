@@ -197,9 +197,18 @@ header{
     color:  rgb(215,27,168);
     transition: 0.2s;
 }
+.profile img{
+    width: 7rem;
+    height:7rem;
+    border-radius:50%;
+    position: absolute;
+    bottom:10%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
 .social-media{
     position:absolute;
-    bottom:5em;
+    bottom:10%;
     width:100%;
     display:flex;
     justify-content:space-evenly;
