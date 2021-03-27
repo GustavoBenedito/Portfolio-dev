@@ -8,7 +8,7 @@ O contorle das tarefas desse projeto será realizado no Github
 
 ## Icones
 
-:package: nova funcionalidade
-:up: atualizaçao
-:beatle: correçao de bug
-:checkered: release
+- :package: nova funcionalidade
+- :up: atualizaçao
+- :beetle: correçao de bug
+- :checkered: release
