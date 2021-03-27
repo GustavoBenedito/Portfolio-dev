@@ -15,6 +15,7 @@
 }
 body{
     font-size:16px;
+    background:#f5f5f5;
 }
 .hamburguer{
     width:2em;
@@ -306,11 +307,12 @@ header{
     font-family: var(--font-action);
     margin-top:1em;
     padding-left:1em;
+    font-size:1.5em
 
 }
-.habilidade-text{
+.habilidades-text{
     font-family: var(--font-secundary);
-    margin-top: 1em;
+    font-size:1.2em;
 }
 .habilidades-img-wrapper{
     grid-column:7/11;
@@ -347,4 +349,16 @@ header{
     
     }
 
+}
+.data-anime{
+    opacity:0;
+    transition:1s;
+}
+.data-anime-bottom{
+    transform: translate3d(0,100px,0)
+}
+
+.data-anime-animate{
+    opacity:1;
+    transform:translate3d(0px,0px,0px);
 }
