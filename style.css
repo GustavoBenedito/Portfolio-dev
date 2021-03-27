@@ -352,7 +352,7 @@ header{
 }
 .data-anime{
     opacity:0;
-    transition:1s;
+    transition:0.5s;
 }
 .data-anime-bottom{
     transform: translate3d(0,100px,0)
