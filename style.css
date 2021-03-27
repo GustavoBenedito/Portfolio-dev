@@ -220,6 +220,7 @@ header{
     transition:0.5s;
 }
 
+
 .habilidades{
     margin-top:5em;
     display:grid;
@@ -228,6 +229,7 @@ header{
     row-gap: 0.5em;
 
 }
+
 
 
 .habilidade:nth-child(1){
@@ -254,10 +256,17 @@ header{
     grid-column: 11/14;
     grid-row: 5/-1;
 }
+.habilidade{
+    transition:1s cubic-bezier(0.7,0.04,0.66,1.71);
+}
+.habilidade:hover{
+    transform: translateX(20%);
 
+}
 .habilidade:hover i{
     color: rgb(223, 101, 192);
     transition: 0.5s;
+
 }
 .habilidades-header h3:hover{
     color: rgb(223, 101, 192);
@@ -320,7 +329,7 @@ header{
         align-items:center;
         justify-content: center;
         padding-left:1.5em;
-        animation: moveCard 1s;
+
     }
     .habilidades-header{
         display:flex;
@@ -329,12 +338,13 @@ header{
     .habilidade{
         padding-bottom:1.5em;
     }
-    @keyframes moveCard{
-        0%{
-            transform: translateX(10em) rotateX(-100deg);
-        }
-        100%{
-            transform:translateX(0) rotateX(0)
-        }
+    .habilidade{
+        transition:0.5s cubic-bezier(0.7,0.04,0.66,1.71);
+    
     }
+    .habilidade:hover{
+        transform: translateX(5%);
+    
+    }
+
 }
