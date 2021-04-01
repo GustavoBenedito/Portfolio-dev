@@ -16,6 +16,7 @@
 body{
     font-size:16px;
     background:#f5f5f5;
+
 }
 .hamburguer{
     width:2em;
@@ -169,6 +170,7 @@ header{
     }
 }
 .sidebar{
+    z-index:3;
     width: 20em;
     height:100vh;
     background-color:#fff;
@@ -228,7 +230,7 @@ header{
     grid-template-columns: repeat(16,1fr);
     grid-template-rows: repeat(16,6em);
     row-gap: 0.5em;
-
+    height:110vh;
 }
 
 
@@ -323,15 +325,47 @@ header{
     object-fit: cover;
     width:100%;
 }
-@media (max-width:800px){
 
+.data-anime{
+    opacity:0;
+    transition:0.5s ease-out;
+}
+.data-anime-bottom{
+    transform: translate3d(0,500px,0)
+}
+
+.data-anime-animate{
+
+    position: relative!important;
+    opacity:1;
+    transform:translate3d(0px,0px,0px);
+}
+.projetos{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.card{
+    margin-top:2em;
+    width:20em;
+    height:30em;
+}
+.card-img-wrapper img{
+    object-fit:cover;
+    width:100%;
+    height:100%;
+}
+@media (max-width:800px){
+    .projetos{
+        display: block;
+    }
     .habilidades{
         margin-top:1.5em;
         display:block;
         align-items:center;
         justify-content: center;
         padding-left:1.5em;
-
+        height:150vh;
     }
     .habilidades-header{
         display:flex;
@@ -348,17 +382,13 @@ header{
         transform: translateX(3%);
     
     }
+    .projetos{
+        display: block;
 
-}
-.data-anime{
-    opacity:0;
-    transition:0.5s;
-}
-.data-anime-bottom{
-    transform: translate3d(0,500px,0)
-}
+    }
+    .card{
+        margin-top:2em;
 
-.data-anime-animate{
-    opacity:1;
-    transform:translate3d(0px,0px,0px);
+    }
+
 }
