@@ -340,6 +340,9 @@ header{
     opacity:1;
     transform:translate3d(0px,0px,0px);
 }
+.sessao-projetos{
+    margin-top:5em;
+}
 .projetos{
     display: flex;
     justify-content:space-evenly;
@@ -349,28 +352,82 @@ header{
     margin-top:2em;
     width:20em;
     height:30em;
+    position: relative;
+
 }
 .card-img-wrapper{
     width:19em;
-    height:27em;
+    height:25em;
     background:#262626;
     border-radius:0.5em;
     border:none;
+
 }
 .card-img-wrapper img{
     object-fit:cover;
     width:19em;
-    height:27em;
+    height:25em;
     opacity: 0.8;    
     border-radius:0.5em;
     border:none;
+    transition: opacity .3s;
 }
-@media (max-width:800px){
+.card:hover .card-img-wrapper img{
+    opacity: 0.5;
+}
+.card-info{
+    position: absolute;
+    bottom:0;
+    padding: 2em;
+    text-shadow: 0.3em 0.2em 0.3em rgba(0,0,0,0.6);
+    height:16em;
+    opacity:0;
+    visibility:hidden;
+    transition:all 0.3s;
+    margin-bottom:2em;
+}
+.card-info h2{
+    font-family: var(--font-primary);
+    font-size: 2em;
+    font-weight:500;
+    color: #eee;
+}
+.card-info h3{
+    font-family: var(--font-secundary);
+    font-weight:100;
+    color: rgb(223, 101, 192);
+}
+.card-info p{
+    font-family: var(--font-secundary);
+    color: #eee;
+    font-weight: 400;
+    width:80%;
+}
+.card-info button{
+    font-family:var(--font-family);
+    width:7em;
+    height:2.2em;
+    background: rgb(215,27,168);
+    background: linear-gradient(100deg, rgba(215,27,168,1) 0%, rgba(138,32,111,1) 60%);
+    border:none;
+    color:#eee;
+    border-radius:0.5em;
+    margin-top:0.5em;
+    box-shadow: 0 0.1em 0.8em rgba(0,0,0,0.8);
+    cursor:pointer;
+}
+.card-info button:hover{
+    opacity:0.8;
+}
+.card:hover .card-info{
+    bottom:2e,;
+    opacity:1;
+    visibility: visible;
+}
+@media (max-width:900px){
     .habilidades{
         margin-top:1.5em;
         display:block;
-        align-items:center;
-        justify-content: center;
         padding-left:1.5em;
         height:150vh;
     }
@@ -379,23 +436,24 @@ header{
         align-items:center;
     }
     .habilidade{
-        padding-bottom:1.5em;
-    }
-    .habilidade{
         transition:0.5s cubic-bezier(0.7,0.04,0.66,1.71);
-    
     }
     .habilidade:hover{
         transform: translateX(3%);
-    
     }
     .projetos{
         display: block;
+        margin-top:2.5em;
     }
     .card{
-        margin-top:2em;
+        margin:5px auto;
     }
     .sessao-projetos{
-        margin-top:32em;
+        margin-top:37em;
+    }
+}
+@media (max-width:800px){
+    .sessao-projetos{
+        margin-top:25em;
     }
 }
