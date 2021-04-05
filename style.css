@@ -444,6 +444,11 @@ header{
     background-color:#eee;
     padding:1em 3em 3em 3em;
     border-radius:0 1em 0 0;
+    opacity:0.8;
+    transition:0.3s;
+}
+.contato-right:hover{
+    opacity:1;
 }
 .contato-left{
     width:35%;
@@ -505,12 +510,12 @@ header{
     margin-top:0.5em;
     box-shadow: 0 0.1em 0.8em rgba(0,0,0,0.8);
     cursor:pointer;
-    transition:0.3s;
+    transition:0.3s ;
     outline:none;
 }
 .btn-submit:hover{
     opacity:0.8;
-    transform:translateY(10%);
+    transform:translateY(30%);
 }
 @media (max-width:900px){
     .habilidades{
@@ -529,6 +534,9 @@ header{
     .habilidade:hover{
         transform: translateX(3%);
     }
+    .sessao-projetos{
+        height:120vh;
+    }
     .projetos{
         display: block;
         margin-top:2.5em;
@@ -536,18 +544,19 @@ header{
     .card{
         margin:5px auto;
     }
-    .sessao-projetos{
-        margin-top:37em;
-    }
     .sessao-contato{
-        margin-top:65em;
+        margin-top:50em;
+    }
+    .contato-wrapper{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        box-shadow:none;
+    }
+    .contato-right{
+        border-radius:1em; 
     }
     .contato-left{
-        border-radius:1em 1em 0 0;
-    }
-}
-@media (max-width:800px){
-    .sessao-projetos{
-        margin-top:25em;
+        display:none;
     }
 }
