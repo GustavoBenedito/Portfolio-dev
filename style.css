@@ -535,7 +535,7 @@ header{
         transform: translateX(3%);
     }
     .sessao-projetos{
-        height:120vh;
+        min-height: 120vh;
     }
     .projetos{
         display: block;
@@ -546,6 +546,7 @@ header{
     }
     .sessao-contato{
         margin-top:50em;
+        min-height: 120vh;
     }
     .contato-wrapper{
         width:100%;
