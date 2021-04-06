@@ -517,3 +517,47 @@ header{
     opacity:0.8;
     transform:translateY(30%);
 }
+@media (max-width:900px){
+    .habilidades{
+        margin-top:1.5em;
+        display:block;
+        padding-left:1.5em;
+        height:100%;
+    }
+    .habilidades-header{
+        display:flex;
+        align-items:center;
+    }
+    .habilidade{
+        transition:0.5s cubic-bezier(0.7,0.04,0.66,1.71);
+    }
+    .habilidade:hover{
+        transform: translateX(3%);
+    }
+    .sessao-projetos{
+        height:100%;
+
+    }
+    .projetos{
+        display: block;
+        margin-top:2.5em;
+    }
+    .card{
+        margin:5px auto;
+    }
+    .sessao-contato{
+        height:100vh;
+    }
+    .contato-wrapper{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        box-shadow:none;
+    }
+    .contato-right{
+        border-radius:1em; 
+    }
+    .contato-left{
+        display:none;
+    }
+}
