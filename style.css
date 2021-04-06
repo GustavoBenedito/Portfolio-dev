@@ -522,7 +522,7 @@ header{
         margin-top:1.5em;
         display:block;
         padding-left:1.5em;
-        height:150vh;
+        height:200vh;
     }
     .habilidades-header{
         display:flex;
@@ -535,7 +535,8 @@ header{
         transform: translateX(3%);
     }
     .sessao-projetos{
-        min-height: 120vh;
+        min-height: 200vh;
+        margin-top:20em;
     }
     .projetos{
         display: block;
@@ -545,8 +546,8 @@ header{
         margin:5px auto;
     }
     .sessao-contato{
-        margin-top:50em;
-        min-height: 120vh;
+        margin-top:30em;
+        min-height: 100vh;
     }
     .contato-wrapper{
         width:100%;
@@ -559,5 +560,20 @@ header{
     }
     .contato-left{
         display:none;
+    }
+}
+@media (max-width:800px){
+    .sessao-projetos{
+        margin-top:12em;
+    }
+
+}
+@media (max-width:650px){
+    .sessao-projetos{
+        margin-top:5em;
+    }
+    .sessao-contato{
+        margin-top:30em;
+
     }
 }
