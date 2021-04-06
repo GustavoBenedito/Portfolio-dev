@@ -13,6 +13,9 @@
     --font-segundary: "Josefin Slab", serif;
     --font-action: "Mulish", serif;
 }
+html{
+    scroll-behavior:smooth;
+}
 body{
     font-size:16px;
     background:#f5f5f5;
@@ -553,7 +556,6 @@ header{
         display:flex;
         justify-content:center;
         box-shadow:none;
-        height:80vh;
     }
     .contato-right{
         border-radius:1em; 
