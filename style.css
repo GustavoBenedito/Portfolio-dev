@@ -553,6 +553,7 @@ header{
         display:flex;
         justify-content:center;
         box-shadow:none;
+        height:80vh;
     }
     .contato-right{
         border-radius:1em; 
