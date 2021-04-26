@@ -224,7 +224,51 @@ header{
     transition:0.5s;
 }
 
+#profile{
+    display:flex;
+    height:100vh;
+    font-family: var(--font-action);
+    position:relative;
+    background: rgb(255,255,255);
+    background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(221,219,219,1) 95%);
+}
+.p{
+    width:33.3%;
+}
+.photo_profile{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:33.3%;
+}
+.photo_profile > img{
+    border-radius:50%;
+    width:15em;
+    height:15em;
+}
 
+.barra_purple{
+    background:rgba(138,32,111,1);
+    width:90%;
+    height:0.5em;
+}
+.presentation{
+    width:30%;
+    position:absolute;
+    left:68%;
+    top:20%;
+}
+.presentation h1{
+    font-size:1.5em;
+}
+.presentation h2{
+    color:rgba(138,32,111,1);
+    font-size:1.2em;
+    margin-bottom:1em;
+}
+.presentation p{
+    text-align: left;
+}
 .habilidades{
     margin-top:5em;
     display:grid;
@@ -533,6 +577,7 @@ header{
     }
     .habilidade{
         transition:0.5s cubic-bezier(0.7,0.04,0.66,1.71);
+        margin-bottom:1.5em;
     }
     .habilidade:hover{
         transform: translateX(3%);

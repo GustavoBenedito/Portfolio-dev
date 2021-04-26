@@ -15,12 +15,12 @@
 
 <body>
 
-    <div id="home"class="container">
-        <div class="hamburguer">
+    <div id="home" class="container">
+        <div id="hamburguerid" class="hamburguer">
             <div class="line" id="line1"></div>
             <div class="line" id="line2"></div>
             <div class="line" id="line3"></div>
-            <span>Fechar</span>
+            <span id="span">Fechar</span>
         </div>
         <header>
             <div class="img-wrapper">
@@ -29,17 +29,17 @@
             <div class="banner">
                 <h1>Web & Front-End Developer</h1>
                 <p>Gustavo Benedito dos Santos</p>
-                <a href="#habilidades"><button>Saiba mais</button></a>
+                <a href="#profile"><button>Saiba mais</button></a>
             </div>
         </header>
         <aside class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item" ><a href="#home" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#profile" class="menu-link">Meu perfil</a></li>
                     <li class="menu-item"><a href="#habilidades" class="menu-link">Habilidades</a></li>
                     <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
                     <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="" class="menu-link">Orçamento</a></li>
                 </ul>
             </nav>
             <div class="social-media">
@@ -51,8 +51,31 @@
             </div>
         </aside>
 
-
-        <section id="habilidades"class="sessao-habilidades">
+        <section id="profile">
+            <div class="p">
+                a
+            </div>
+            <div class="photo_profile">
+                <img src="https://github.com/GustavoBenedito.png" alt="imagem de perfil github">
+            </div>
+            <div class="presentation">
+                <div class="text_presentation">
+                    <div class="barra_purple"></div>
+                    <h1>Gustavo Benedito</h1>
+                    <h2>Desenvolvedor</h2>
+                    <p>
+                        Meu nome é Gustavo Benedito, tenho 20 anos, conheci o mundo da tecnologia
+                        no COTUCA-Unicamp (colégio técnico de Campinas), onde tive a oportunidade
+                        de conhecer o Python, por conta disso acabei me encantando pelo mundo do
+                        desenvolvimento, os professores do COTUCA me orientaram nos estudos para
+                        conquistar uma bolsa de 100% na faculdade, hoje sou formado em análise e
+                        desenvolvimento de sistemas pela UNIP.
+                        Sou apaixonado por aprender tecnologias novas e adquirir novas experiências,
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="habilidades" class="sessao-habilidades">
             <div class="sessao-header">
                 <h1>Habilidades</h1>
             </div>
@@ -125,7 +148,7 @@
         </section>
 
 
-        <section id="projetos"class="sessao-projetos">
+        <section id="projetos" class="sessao-projetos">
             <div class="sessao-header">
                 <h1>Projetos</h1>
             </div>
@@ -179,8 +202,8 @@
                 <div class="contato-left">
 
                 </div>
-                <div id="contato"class="contato-right">
-                    <h1>Contato</h1>
+                <div id="contato" class="contato-right">
+                    <h1>Fale comigo</h1>
                     <form action="">
                         <div class="input-group">
                             <input type="text" class="field" id="nome">
@@ -192,7 +215,7 @@
                         </div>
                         <div class="input-group">
                             <textarea name="mensagem" cols="30" rows="10" class="field" id="mensagem"></textarea>
-                            <label for="mensagem"class="field-label">Mensagem</label>
+                            <label for="mensagem" class="field-label">Mensagem</label>
                         </div>
                         <button type="submit" class="btn-submit">Enviar</button>
                     </form>

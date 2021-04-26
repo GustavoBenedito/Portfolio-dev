@@ -1,9 +1,18 @@
-var hamburguer = document.querySelector(".hamburguer");
-hamburguer.addEventListener("click", function(){
-    document.querySelector(".container").classList.toggle("show-menu")
+const hamburguer = document.querySelector(".hamburguer");
+const sidebar = document.querySelector(".sidebar");
+const container = document.querySelector(".container");
+
+function abrirHamburguer(){
+
+}
+hamburguer.addEventListener("click",function(){
+    document.querySelector(".container").classList.toggle("show-menu");
 })
 
-/* debounce */ 
+
+
+
+/* debounce 
 const debounce = function(func,wait,immediate){
     let timeout;
     return function(...args){
@@ -39,3 +48,4 @@ window.addEventListener('scroll', debounce(function(){
     console.log("arroz");
 }, 200));
 }
+*/
