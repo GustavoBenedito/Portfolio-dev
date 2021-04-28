@@ -102,7 +102,7 @@ header{
 .img-wrapper img{
     width:100%;
     height:100%;
-    object-fit:cover;
+
     opacity:0.5;
     animation: zoom 10s;
 }
@@ -217,13 +217,11 @@ header{
     justify-content: center;
     align-items:center;
     color:rgba(138,32,111,1);
-    
 }
 .social-media i:hover{
     color:rgb(223, 101, 192);
     transition:0.5s;
 }
-
 #profile{
     display:flex;
     height:100vh;
@@ -232,41 +230,85 @@ header{
     background: rgb(255,255,255);
     background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(221,219,219,1) 95%);
 }
-.p{
-    width:33.3%;
-}
-.photo_profile{
-    display:flex;
+.presentation-left{
+    width:30%;
+    display:block;
     align-items:center;
-    justify-content:center;
+    margin-top:8em;
+}
+
+.malcolm-x h1{
+    color:rgba(138,32,111,1);
+    text-align: right;
+} 
+.malcolm-x strong{
+    color:rgba(138,32,111,1);
+    font-size:1em;
+}
+.malcolm-x{
+    display:block;
+    align-items:center;
+    margin:auto;
+    text-align: center;
+}
+
+.photo_profile{
+    display:block;
     width:33.3%;
+    position:relative;
 }
 .photo_profile > img{
     border-radius:50%;
     width:15em;
     height:15em;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.photo_profile p{
+    position: absolute;
+    top: 75%;
+    bottom:0;
+    left: 25%;
+    right: 0;
+    margin: auto;
+}
+.photo_profile p i{
+    color:rgba(138,32,111,1); 
+    font-size: 2em;
+    animation:is-bouncing 0.5s ease-in alternate infinite;
+    place-items: center;
+}
+@keyframes is-bouncing{
+    to{
+        transform:translateY(10px);
+    }
 }
 
+.presentation-right{
+    width:30%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
 .barra_purple{
-    background:rgba(138,32,111,1);
+    background: rgb(215,27,168);
+    background: linear-gradient(100deg, rgba(215,27,168,1) 0%, rgba(138,32,111,1) 60%);
     width:90%;
     height:0.5em;
 }
-.presentation{
-    width:30%;
-    position:absolute;
-    left:68%;
-    top:20%;
-}
-.presentation h1{
+.text_presentation h1{
     font-size:1.5em;
 }
-.presentation h2{
+.text_presentation h2{
     color:rgba(138,32,111,1);
     font-size:1.2em;
     margin-bottom:1em;
 }
-.presentation p{
+.text_presentation p{
     text-align: left;
 }
 #habilidades{
